@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CreditCard Defaulter</title>
+</head>
+<body>
+    <h1>CreditCard Defaulter</h1>
+    {% if result %}
+        <p>{{ result}}</p>
+    {% endif %}
+    <form method = 'post' action = '/predict'>
+        <label>LIMIT_BAL</label><br>
+        <input type = 'text' name="LIMIT_BAL"><br><br>
+
+        <label>SEX(1: 'Male', 2: 'Female')</label><br>
+        <input type = 'text' name="SEX"><br><br>
+
+        <label>EDUCATION(1: 'graduate school', 2: 'university', 3: 'High School', 4: 'Others')</label><br>
+        <input type = 'text' name="EDUCATION"><br><br>
+
+        <label>MARRIAGE(1: 'Married', 2: 'Unmarried', 3: 'Single')</label><br>
+        <input type = 'text' name="MARRIAGE"><br><br>
+
+        <label>AGE</label><br>
+        <input type = 'text' name="AGE"><br><br>
+
+        <label>PAY_0 (from -2 to 8) </label><br>
+        <input type = 'text' name="PAY_0 "><br><br>
+
+        <label>PAY_2 (from -2 to 8)</label><br>
+        <input type = 'text' name="PAY_2 "><br><br>
+
+        <label>PAY_3 (from -2 to 8) </label><br>
+        <input type = 'text' name="PAY_3 "><br><br>
+
+        <label>PAY_4 (from -2 to 8)</label><br>
+        <input type = 'text' name="PAY_4 "><br><br>
+
+        <label>PAY_5 (from -2 to 8)</label><br>
+        <input type = 'text' name="PAY_5 "><br><br>
+
+        <label>PAY_6 (from -2 to 8)</label><br>
+        <input type = 'text' name="PAY_6 "><br><br>
+
+        <label>April_Bill</label><br>
+        <input type = 'text' name="April_Bill "><br><br>
+
+        <label>May_Bill</label><br>
+        <input type = 'text' name="May_Bill "><br><br>
+
+
+        <label>June_Bill </label><br>
+        <input type = 'text' name="June_Bill "><br><br>
+
+        <label>July_Bill </label><br>
+        <input type = 'text' name="July_Bill "><br><br>
+
+        <label>Aug_Bill </label><br>
+        <input type = 'text' name="Aug_Bill "><br><br>
+
+        <label>Sep_Bill </label><br>
+        <input type = 'text' name="Sep_Bill "><br><br>
+
+        <label>Sep_Pay </label><br>
+        <input type = 'text' name="Sep_Pay "><br><br>
+
+        <label>Aug_Pay </label><br>
+        <input type = 'text' name="Aug_Pay "><br><br>
+
+        <label>July_Pay </label><br>
+        <input type = 'text' name="July_Pay "><br><br>
+
+        <label>June_Pay </label><br>
+        <input type = 'text' name="June_Pay "><br><br>
+
+        <label>May_Pay </label><br>
+        <input type = 'text' name="May_Pay "><br><br>
+
+        <label>April_Pay </label><br>
+        <input type = 'text' name="April_Pay "><br><br>
+
+        <input type = "submit" name="Predict"><br><br>
+    </form>
+
+
+</body>
+</html>
